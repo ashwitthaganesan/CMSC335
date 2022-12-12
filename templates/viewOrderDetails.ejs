@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Order Details</title>
+	<style>
+        body { 
+            background-color: pink;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 2rem;
+        }
+
+        .content {
+            max-width: 600px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .content2 {
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+	<h1 class= "content">Order Details</h1>
+	<div class= "content2">
+		<strong>Name: </strong><%- name %><br>
+        <strong>Email Address: </strong><%- email %><br>
+        <strong>Phone: </strong><%- phone %><br>
+        <strong>Items: </strong><%- itemsArray %><br>
+        <strong>Additional Information: </strong><%- additionalInfo %><br>
+        <hr>
+	</div>
+</body>
+
+</html>

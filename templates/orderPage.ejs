@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Order Coffee</title>
+    <style>
+        body { 
+            background-color: pink;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 2rem;
+        }
+
+        .content {
+            max-width: 600px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .content2 {
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+	<h1 class="content">Order Coffee</h1>
+	<form class="content2" action="/orderPage" method="post">
+		<fieldset>
+			<label><strong>Name: </strong><input type="text" name="name" required/></label>
+			<label><strong>Email Address: </strong><input type="email" name="email"></label><br>
+            <label><strong>Phone Number (no spaces or dashes): </strong><input type="phone" name="phone" required></label>
+			<br>
+			<br>
+
+            <label for="items"><strong>Select:</strong></label>
+                    <select name="items" id="items" multiple>
+                        <option value="Latte">Latte ($5)</option>
+                        <option value="Espresso">Espresso ($5)</option>
+                        <option value="Cappuccino">Cappuccino ($5)</option>
+                    </select>
+			<br>
+			<br>
+			<strong>Additional Info (extra sweet, extra hot, extra ice, etc!):</strong>
+			<br>
+			<label><textarea rows="5" cols="80" name="additionalInfo"></textarea></label>
+		</fieldset>
+
+		<br>
+		<input type="reset"/>
+		<input type="submit" value="Submit Order"/><br>
+		<hr>
+	</form>
+</body>
+
+</html>

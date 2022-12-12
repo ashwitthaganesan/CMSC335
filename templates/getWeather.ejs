@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Get Weather Details</title>
+    <style>
+        body { 
+            background-color: pink;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 2rem;
+        }
+
+        .content {
+            max-width: 600px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .content2 {
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .content3 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="content">Get Weather Details</h1>
+    <div class="content3">
+        <p>Check the weather at one of our locations so you can decide what drink to get today</p> 
+        <strong>Tip: We recommend a hot latte on a cold day!</strong>
+    </div>
+	<form class="content2" action="/getWeather" method="post">
+		<fieldset>
+            <label for="cityName"><strong>Select a Location:</strong></label>
+                    <select name="cityName" id="cityName" required>
+                        <option value="annapolis">Annapolis</option>
+                        <option value="rockville">Rockville</option>
+                        <option value="bethesda">Bethesda</option>
+                    </select>
+		</fieldset>
+		<br>
+		<input type="reset"/>
+		<input type="submit" value="enter"/><br>
+		<hr>
+	</form>
+</body>
+
+</html>

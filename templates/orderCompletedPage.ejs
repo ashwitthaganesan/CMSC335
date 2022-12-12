@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Thank You</title>
+    <style>
+        body { 
+            background-color: pink;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 2rem;
+        }
+
+        .content {
+            max-width: 600px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .content2 {
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+	<h1 class ="content">Thank you for your Order!</h1>
+	<div class ="content2" >
+        <strong>Your Total: $</strong><%- total %><br>
+		<a href="/findOrder">Click here to view your Order Details</a><br>
+	</div>
+</body>
+
+</html>

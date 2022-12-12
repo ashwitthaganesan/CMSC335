@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Find Order</title>
+	<style>
+        body { 
+            background-color: pink;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 2rem;
+        }
+
+        .content {
+            max-width: 600px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .content2 {
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+	<h1 class = "content">Find your Order Details!</h1>
+	<form action="/findOrder" method="post">
+		<fieldset>
+			<label><strong>Enter your Phone Number: </strong><input type="phone" name="phone"></label>
+			<br>
+			<br>
+		</fieldset>
+
+		<br>
+		<input type="reset" />
+		<input type="submit"/><br>
+        <hr>
+	</form>
+</body>
+
+</html>
